@@ -6,12 +6,9 @@ block content
       header.w3-container.w3-teal
         h1=title
       .w3-container
-        p Repositories found in localhost:7200
+        p Repositories found in localhost:7200 :
         for repository in repositories
           p
-            a="ID:"
-            a=repository.id.value
-            a="/ TITLE:"
-            a=repository.title.value
+            a(href="http://localhost:3000/sparql/input/" + repository.id.value)=repository.id.value
       footer.w3-container.w3-teal
-            adress Criado por Ezequiel Moreira
+        adress Criado por Ezequiel Moreira
