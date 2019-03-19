@@ -17,9 +17,9 @@ block content
                 h4 Input your query 
               form.w3-container(method='POST' action=identity)
                 textarea.w3-input.w3-border(rows="10" cols="50" placeholder="Query here..." name="intext" id="intext") 
-                select.w3-input.w3-select(name="selection")
-                  option.w3-input(value="" selected disabled) Choose the output format of your query
-                  option.w3-input(value="json") JSON
+                p Choose the output format of your query
+                select.w3-input.w3-select(name="selection") 
+                  option.w3-input(value="json" selected) JSON
                   option.w3-input(value="xml") XML
                 input.w3-btn.w3-teal(type='submit' value='Enviar')
 
